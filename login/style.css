@@ -25,16 +25,139 @@ body {
 }
 
 .login-left {
-
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .login-header {
-
+    margin: 0;
 }
+
 .login-header-heading {
-    font-family: "Roboto" sans-serif;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.login-header-tittle {
+    color: var(--title-color);
+    margin: 0;
+    padding-bottom: 32px;
+}
+
+.login-main {
+    max-width: 300px;
+}
+
+.login-main-item-input { 
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--boder-color);
+    border-radius: 32px;
+    padding-left: 16px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.login-main-item-input + .login-main-item-input {
+    margin-top: 15px;
+}
+
+.login-main-form {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 28px 0;
+}
+
+.login-main-sumit {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid var(--boder-color);
+    border-radius: 32px;
+    background: linear-gradient(to right, blue, violet);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.login-main-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white-color);
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.login-main-sumit:active {
+    opacity: 0.5;
+}
+
+.login-footer {
+    max-width: 300px; 
+    display: flex;
+    justify-content: space-around;
+    padding: 48px 0;
+}
+
+.login-footer-btn {
+    height: 36px;
+    width: 45%;
+    border: 1px solid var(--boder-color);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.login-footer-img {
+    height: 20px;
+}
+
+.login-footer-img-google {
+    padding: 0 calc( 15.6px / 2);
+}
+
+.login-right {
+    padding-right: 150px;
+}
+
+.login-footer-btn:hover {
+    background-color: #444;
+    animation: slowMotion .3s ease-out;
+    color: var(--white-color);
+}
+
+@keyframes slowMotion {
+    from {
+      opacity: 0;
+    } to {
+      opacity: 1;
+    }
+  }
+
+.login-right-img {
+    height: 100%;
+}
+
+/* Reponsive */
+
+/* molie */
+@media (max-width: 46.25em) {
+
 
 }
-.login-headee-tittle {
 
-}
+  /* Tablet */
+  @media (min-width: 46.3125em) and (max-width: 64em) {
+
+
+  }
