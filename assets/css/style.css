@@ -17,29 +17,54 @@ body {
 }
 
 .header {
-    height: 80px;
+    height: 8rem;
+    background-color: var(--frist-color);
     display: flex;
+    align-items: center;
+}
+
+.header-navbar {
+    height: 50%;
+    display: inline-flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    flex: 1;
 }
 
-.cev-header-left-list {
-    display: inline-block;
+.header-navbar-left-list, 
+.header-navbar-right-list {
     height: 100%;
 }
 
-.cev-header-left-item {
+.header-navbar-left-item,
+.header-navbar-right-item {
     display: inline-block;
-    
+    font-size: 1.6rem;
+    height: calc(100% + 2px);
+    /* width: calc(100% + 2px); */
+}
+
+.header-navbar-left-item-link,
+.header-navbar-right-item-link {
+    display: inline-block;
+    line-height: 4rem;
+    padding: 0 8px;
+    text-decoration: none;
+    height: calc(100% - 2px);
+    text-transform: uppercase;
+}
+
+.header-navbar-left-item-link:hover,
+.header-navbar-right-item-link:hover {
+    border: 2px solid var(--boder-color);
+    border-radius: 4px;
 }
 
 
-.cev-header-right-list {
-    display: inline-block;
-    height: 100%;
-}
-
-.cev-header-right-item {
-    display: inline-block;
+.header-navbar-right-item-link-icon,
+.header-navbar-left-item-link-icon {
+    padding-right: 0.4rem;
 }
 
 .main {
