@@ -26,23 +26,40 @@ body {
 .header-navbar {
     height: 50%;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 32px;
     flex: 1;
 }
 
-.header-navbar-left-list, 
-.header-navbar-right-list {
-    height: 100%;
+.header-home { 
+    height: 80%;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-home-link {
+    display: inline-block;
+    line-height: 100%;
+    padding: 12px 8px;
+    font-size: 40px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 41% 59% 70% 30% / 27% 69% 31% 73% ;
+    color: var(--header-left-color);
+}
+
+.header-home-link:hover {
+    background-color: var(--header-left-color);
+    color: var(--white-color);
 }
 
 .header-navbar-left-item,
 .header-navbar-right-item {
     display: inline-block;
     font-size: 1.6rem;
-    height: calc(100% + 2px);
-    /* width: calc(100% + 2px); */
+    height: 100%;
 }
 
 .header-navbar-left-item-link,
@@ -51,16 +68,36 @@ body {
     line-height: 4rem;
     padding: 0 8px;
     text-decoration: none;
-    height: calc(100% - 2px);
+    height: 100%;
     text-transform: uppercase;
 }
 
-.header-navbar-left-item-link:hover,
-.header-navbar-right-item-link:hover {
-    border: 2px solid var(--boder-color);
-    border-radius: 4px;
+.header-navbar-left-item-link {
+    color: var(--header-left-color);
+    padding: 0 12px;
+    border: 1px solid transparent;
+    border-radius: 48px;
 }
 
+.header-navbar-left-item-link:hover {
+    background-color: var(--header-left-color);
+    color: var(--white-color);
+}
+
+.header-navbar-right-item-link {
+    color: blue; padding: 0 46px;
+    border: 1px solid var(--blue-color);
+    border-radius: 32px;
+}
+
+.header-navbar-right-item-link:hover {
+    background-color: var(--header-left-color);
+    color: var(--white-color);
+}
+
+.header-navbar-right-item + .header-navbar-right-item {
+    padding-left: 16px;
+}
 
 .header-navbar-right-item-link-icon,
 .header-navbar-left-item-link-icon {

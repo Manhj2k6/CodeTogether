@@ -1,10 +1,13 @@
 :root {
+    --header-left-color: #888;
     --frist-color: #eee;
-    --text-color: #333;
+    --text-color: #ccc;
     --title-color: #999;
     --boder-color: #666;
     --white-color: #fff;
     --black-color: #000;
+    --blue-color: rgb(0, 0, 255);
+    --bg-color: #555;
 }
 
 html {
