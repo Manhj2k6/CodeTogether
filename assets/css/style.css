@@ -1,3 +1,51 @@
-h1 {
-    color: red;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+}
+
+.container {
+
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cev-header-left-list {
+    display: inline-block;
+    height: 100%;
+}
+
+.cev-header-left-item {
+    display: inline-block;
+    
+}
+
+
+.cev-header-right-list {
+    display: inline-block;
+    height: 100%;
+}
+
+.cev-header-right-item {
+    display: inline-block;
+}
+
+.main {
+
+}
+
+.footer {
+
 }
